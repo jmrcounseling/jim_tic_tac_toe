@@ -38,9 +38,9 @@ def check_winner(b)
     elsif b[line[0]] == "O" and b[line[1]] == "O" and b[line[2]] == "O"
       return "Computer"
     else
-      return nil
     end
   end
+    return nil
 end
 
 board = initialize_board(board)
