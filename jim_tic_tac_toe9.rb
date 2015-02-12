@@ -39,8 +39,7 @@ def check_winner(b)
       return "Computer"
     end
   end
-   else
-     return nil
+  nil
 end
 
 board = initialize_board(board)
