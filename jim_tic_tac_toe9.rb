@@ -5,7 +5,7 @@ def initialize_board(b)
 end
 
 def draw_board(b)
-  puts "________________________"
+  puts "____________"
   puts "|#{b[1]}____|#{b[2]}____|#{b[3]}____|"
   puts "|#{b[4]}____|#{b[5]}____|#{b[6]}____|"
   puts "|#{b[7]}____|#{b[8]}____|#{b[9]}____|"
@@ -17,10 +17,10 @@ end
 
 def player_picks_square(b)
   puts "Pick a square (1-9):"
- # puts "_________"
- # puts "|__1__|__2__|__3__|"
-  #puts "|__4__|__5__|__6__|"
- # puts "|__7__|__8__|__9__|"
+  puts "_________"
+  puts "|__1__|__2__|__3__|"
+  puts "|__4__|__5__|__6__|"
+  puts "|__7__|__8__|__9__|"
   position = gets.chomp.to_i
   b[position] = "X"
 end
@@ -57,3 +57,10 @@ if winner
 else
   puts "it's a tie!"
 end
+
+loop do
+  puts "Play again? (y/n)"
+  break if gets.chomp.downcase != "y"
+end
+
+puts "Good-bye for now!"
