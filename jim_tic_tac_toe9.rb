@@ -57,10 +57,3 @@ if winner
 else
   puts "it's a tie!"
 end
-
-loop do
-  puts "Play again? (y/n)"
-  break if gets.chomp.downcase != "y"
-end
-
-puts "Good-bye for now!"
