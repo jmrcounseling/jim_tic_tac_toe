@@ -25,6 +25,10 @@ def player_picks_square(b)
   b[position] = "X"
 end
 
+puts "Play again? (y/n)"
+break if gets.chomp.downcase !+ "y"
+end
+
 def computer_picks_square(b)
   position = empty_positions(b).sample
   b[position] = "O"
